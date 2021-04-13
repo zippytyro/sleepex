@@ -153,27 +153,7 @@
       ></a>
     </footer>
     <h4>Use headsphones/earphones</h4>
-    <script>
-      var audio, playbtn, seek_bar;
-      function intitialaudioplayer() {
-        audio = new Audio();
-        audio.src =
-          "https://firebasestorage.googleapis.com/v0/b/jovial-pen.appspot.com/o/0.mp4?alt=media&token=c56806cf-3fdb-433c-8287-8080d255209d";
-        audio.loop = true;
-        playbtn = document.getElementById("playpausebtn");
-        // event handling
-        playbtn.addEventListener("click", playPause);
-        function playPause() {
-          if (audio.paused) {
-            audio.play();
-            document.getElementById("playpausebtn").src = "img/pause.png";
-          } else {
-            audio.pause();
-            document.getElementById("playpausebtn").src = "img/play.png";
-          }
-        }
-      }
-      window.addEventListener("load", intitialaudioplayer);
+    <script src="script.js">
     </script>
   </body>
 </html>
